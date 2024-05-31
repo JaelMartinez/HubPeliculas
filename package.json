@@ -1,0 +1,19 @@
+{
+  "name": "hubslider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inicio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwind build inicio/inicio.css -o inicio/output.css",
+    "watch:css": "tailwindcss build inicio/inicio.css -o inicio/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "tailwindcss": "^3.4.3"
+  }
+}
