@@ -51,3 +51,7 @@ thumbnails.forEach((thumbnail, index) => {
     showSlider();
   });
 });
+window.addEventListener("scroll", function () {
+  var header = document.getElementById("header");
+  header.classList.toggle("bg-gray-950", window.scrollY > 0);
+});

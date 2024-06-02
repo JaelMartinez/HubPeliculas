@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  font-size: 16px;
+  background-color: #000003;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Carousel configuration parameters */
+.carousel {
+  padding: 20px;
+  perspective: 1500px; /* $viewer-distance */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel > * {
+  flex: 0 0 auto;
+}
+
+.carousel figure {
+  margin: 0;
+  width: 40%; /* $item-width */
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0; /* $item-separation / 2 */
+}
+
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Asegúrate de que el contenedor tenga una altura, de lo contrario, no se centrará verticalmente */
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #4c1111;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+/* Opcional: estilos adicionales para el botón random */
+.carousel nav .random {
+  background-color: #ff4500; /* Puedes elegir el color que prefieras */
+  color: #fff;
+}
+/* Carousel configuration parameters */
+.carousel figure {
+  margin: 0;
+  width: 40%; /* $item-width */
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out; /* Duración por defecto */
+  position: relative;
+}

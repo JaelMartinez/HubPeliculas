@@ -678,12 +678,20 @@ video {
   left: 0px;
 }
 
+.left-1\/2{
+  left: 50%;
+}
+
 .left-\[10\%\]{
   left: 10%;
 }
 
 .right-0{
   right: 0px;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-\[20\%\]{
@@ -700,6 +708,10 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .z-\[1\]{
@@ -754,9 +766,16 @@ video {
   margin: 0px;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-2{
@@ -866,6 +885,10 @@ video {
   display: none;
 }
 
+.h-\[200px\]{
+  height: 200px;
+}
+
 .h-full{
   height: 100%;
 }
@@ -874,12 +897,12 @@ video {
   height: 100vh;
 }
 
-.w-\[1200px\]{
-  width: 1200px;
+.w-64{
+  width: 16rem;
 }
 
-.w-\[25px\]{
-  width: 25px;
+.w-\[300px\]{
+  width: 300px;
 }
 
 .w-\[this-is\\\\\]{
@@ -898,12 +921,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[90\%\]{
-  max-width: 90%;
-}
-
 .flex-shrink{
   flex-shrink: 1;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
 }
 
 .shrink{
@@ -940,6 +963,11 @@ video {
 
 .border-separate{
   border-collapse: separate;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform{
@@ -1105,10 +1133,6 @@ video {
   list-style-position: outside;
 }
 
-.list-none{
-  list-style-type: none;
-}
-
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1238,14 +1262,6 @@ video {
 
 .grid-flow-col-dense{
   grid-auto-flow: column dense;
-}
-
-.grid-cols-\[50px_1fr_50px\]{
-  grid-template-columns: 50px 1fr 50px;
-}
-
-.grid-rows-\[50px\]{
-  grid-template-rows: 50px;
 }
 
 .flex-row{
@@ -1432,14 +1448,20 @@ video {
   justify-items: stretch;
 }
 
-.gap-5{
-  gap: 1.25rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -1752,6 +1774,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1880,14 +1906,44 @@ video {
   border-style: none;
 }
 
-.bg-\[\#010101\]{
+.bg-\[\#040610\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(1 1 1 / var(--tw-bg-opacity));
+  background-color: rgb(4 6 16 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
@@ -2000,8 +2056,85 @@ video {
      object-fit: scale-down;
 }
 
-.p-0{
-  padding: 0px;
+.p-2{
+  padding: 0.5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pr-40{
+  padding-right: 10rem;
+}
+
+.pr-20{
+  padding-right: 5rem;
+}
+
+.pl-0{
+  padding-left: 0px;
+}
+
+.pr-32{
+  padding-right: 8rem;
+}
+
+.pr-12{
+  padding-right: 3rem;
+}
+
+.pr-52{
+  padding-right: 13rem;
+}
+
+.pr-44{
+  padding-right: 11rem;
+}
+
+.pr-64{
+  padding-right: 16rem;
+}
+
+.pr-48{
+  padding-right: 12rem;
+}
+
+.pr-56{
+  padding-right: 14rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .text-left{
@@ -2060,16 +2193,22 @@ video {
   vertical-align: super;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-\[100px\]{
   font-size: 100px;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.font-medium{
-  font-weight: 500;
+.font-bold{
+  font-weight: 700;
 }
 
 .uppercase{
@@ -2153,9 +2292,19 @@ video {
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2202,6 +2351,16 @@ video {
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.placeholder-gray-400::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-400::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
 .opacity-0{
@@ -2541,7 +2700,7 @@ video {
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #010101;
+  background-color: #edecef;
   color: #eee;
 }
 
@@ -2549,45 +2708,16 @@ svg {
   width: 25px;
 }
 
-/* Si prefieres, puedes conservar algunas de tus reglas CSS personalizadas */
-
-header {
-  width: 1200px;
-  max-width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
-  grid-template-rows: 50px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;
-}
-
-header .logo {
-  font-weight: bold;
-}
-
-header .menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-weight: 500;
-}
-
 /* css slider */
 
 .slider {
   height: 100vh;
-  margin-top: -50px;
+  margin-top: -10px;
   position: relative;
 }
 
 .slider .list .item {
-  position: absolute;
+  position: flex;
   inset: 0 0 0 0;
   overflow: hidden;
   opacity: 0;
@@ -2605,10 +2735,10 @@ header .menu {
   content: "";
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #000507 20%, transparent);
+  background-image: linear-gradient(to top, #040610 15%, transparent);
 }
 
 .slider .list .item .content {
@@ -2647,35 +2777,21 @@ header .menu {
   }
 }
 
-.slider .list .item.active p:nth-child(1),
-.slider .list .item.active h2,
-.slider .list .item.active p:nth-child(3) {
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent 0.5s 0.5s ease-in-out 1 forwards;
-}
-
-.slider .list .item.active h2 {
-  animation-delay: 0.5s;
-}
-
-.slider .list .item.active p:nth-child(3) {
-  animation-duration: 0.8s;
-}
-
 .thumbnail {
   position: relative;
-  bottom: 300px;
+  /* 'flex' no es un valor válido para 'position'. Probablemente quieras 'relative' o 'absolute'. */
   z-index: 11;
   display: flex;
   gap: 10px;
   width: 100%;
-  height: 250px;
+  height: -350px;
   padding: 0 50px;
   box-sizing: border-box;
   overflow: auto;
+  flex-direction: row;
   justify-content: center;
+  margin-top: -250px;
+  /* Ajusta este valor según tus necesidades. */
 }
 
 .thumbnail::-webkit-scrollbar {
@@ -2761,6 +2877,11 @@ header .menu {
   font-weight: 700;
 }
 
+.hover\:text-gray-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
@@ -2769,6 +2890,22 @@ header .menu {
 .hover\:before\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-2:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-pink-500:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(236 72 153 / var(--tw-ring-opacity));
 }
 
 .focus\:hover\:text-center:hover:focus{
