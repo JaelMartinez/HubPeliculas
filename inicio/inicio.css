@@ -14,17 +14,37 @@ svg {
   width: 25px;
 }
 
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d0138;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* css slider */
 .slider {
   height: 100vh;
-  margin-top: -10px;
+  margin-top: -5px;
   position: relative;
 }
 
 .slider .list .item {
-  position: flex;
+  position: absolute;
   inset: 0 0 0 0;
-  overflow: hidden;
+
   opacity: 0;
   transition: 0.5s;
 }
@@ -61,11 +81,13 @@ svg {
   font-size: 100px;
   margin: 0;
 }
+
 .slider .list .item .content p {
   font-size: 20px;
   max-width: 700px;
   margin: 0;
 }
+
 .slider .list .item.active {
   opacity: 1;
   z-index: 10;
@@ -78,8 +100,9 @@ svg {
     opacity: 1;
   }
 }
+
 .thumbnail {
-  position: relative; /* 'flex' no es un valor válido para 'position'. Probablemente quieras 'relative' o 'absolute'. */
+  position: relative;
   z-index: 11;
   display: flex;
   gap: 10px;
@@ -87,10 +110,10 @@ svg {
   height: -350px;
   padding: 0 50px;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
   flex-direction: row;
   justify-content: center;
-  margin-top: -250px; /* Ajusta este valor según tus necesidades. */
+  margin-top: -250px;
 }
 
 .thumbnail::-webkit-scrollbar {
@@ -132,5 +155,197 @@ svg {
 
   .arrows {
     top: 10%;
+  }
+}
+
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+
+/* Estilos para las tarjetas */
+.card-wrap {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 20px;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
+    inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+}
+
+.card:hover .card-info {
+  transform: translateY(0);
+}
+
+.card:hover .card-info p {
+  opacity: 1;
+}
+
+.card:hover .card-bg {
+  opacity: 0.8;
+}
+
+.card-info {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateY(40%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card-info p {
+  opacity: 0;
+  text-shadow: rgba(0, 0, 0, 1) 0 2px 3px;
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.flex {
+  display: flex;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Estilos de la nueva sección */
+.new-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.new-slider {
+  --items-per-screen: 4;
+  --slider-index: 0;
+  display: flex;
+  flex-grow: 1;
+  margin: 0 var(--img-gap);
+  transform: translateX(calc(var(--slider-index) * -100%));
+  transition: transform 250ms ease-in-out;
+}
+
+.new-slider > img {
+  flex: 0 0 calc(100% / var(--items-per-screen));
+  max-width: calc(100% / var(--items-per-screen));
+  aspect-ratio: 16 / 9;
+  padding: var(--img-gap);
+  border-radius: 1rem;
+}
+
+.new-handle {
+  border: none;
+  border-radius: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 10;
+  margin: var(--img-gap) 0;
+  width: var(--handle-size);
+  cursor: pointer;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 0;
+  transition: background-color 150ms ease-in-out;
+}
+
+.new-left-handle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.new-right-handle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.new-handle:hover,
+.new-handle:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.new-text {
+  transition: transform 150ms ease-in-out;
+}
+
+.new-handle:hover .new-text,
+.new-handle:focus .new-text {
+  transform: scale(1.2);
+}
+
+.new-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc(var(--img-gap) * 2 + var(--handle-size));
+  align-items: center;
+}
+
+.new-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.new-progress-bar {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.new-progress-item {
+  flex: 0 0 1.5rem;
+  min-width: 1.5rem;
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.new-progress-item.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1000px) {
+  .new-slider {
+    --items-per-screen: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .new-slider {
+    --items-per-screen: 2;
   }
 }
