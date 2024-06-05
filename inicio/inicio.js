@@ -67,43 +67,7 @@ toggleHeaderClass();
 // Y también en cada evento de desplazamiento
 window.addEventListener("scroll", toggleHeaderClass);
 
-document.querySelectorAll(".card-wrap").forEach((cardWrap) => {
-  cardWrap.addEventListener("mousemove", handleMouseMove);
-  cardWrap.addEventListener("mouseenter", handleMouseEnter);
-  cardWrap.addEventListener("mouseleave", handleMouseLeave);
-
-  function handleMouseMove(e) {
-    const card = cardWrap.querySelector(".card");
-    const cardBg = cardWrap.querySelector(".card-bg");
-    const { width, height, left, top } = card.getBoundingClientRect();
-    const x = e.clientX - left - width / 2;
-    const y = e.clientY - top - height / 2;
-
-    const rX = (y / height) * 5;
-    const rY = (x / width) * -5;
-    card.style.transform = `rotateY(${rY}deg) rotateX(${rX}deg)`;
-
-    const tX = (x / width) * -5;
-    const tY = (y / height) * -5;
-    cardBg.style.transform = `translateX(${tX}px) translateY(${tY}px)`;
-  }
-
-  function handleMouseEnter() {
-    clearTimeout(cardWrap.mouseLeaveDelay);
-  }
-
-  function handleMouseLeave() {
-    const card = cardWrap.querySelector(".card");
-    const cardBg = cardWrap.querySelector(".card-bg");
-    cardWrap.mouseLeaveDelay = setTimeout(() => {
-      card.style.transform = "rotateY(0deg) rotateX(0deg)";
-      cardBg.style.transform = "translateX(0px) translateY(0px)";
-    }, 100);
-  }
-});
-
 // Nueva sección
-
 document.addEventListener("click", (e) => {
   let handle;
   if (e.target.matches(".new-handle")) {

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veuw</title>
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="inicio.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
   </head>
   <body class="bg-[#040610] text-[#eee] m-0 font-poppins">
     <header
@@ -130,109 +134,247 @@
         </div>
       </div>
     </div>
-    <!-- Nuevas secciones -->
-    <section class="mt-20 px-8">
-      <h2 class="text-3xl font-bold mb-5">New Releases</h2>
-      <div class="relative">
-        <button
-          id="prev"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2"
-        >
-          Prev
-        </button>
-        <div class="flex overflow-x-auto gap-4 no-scrollbar" id="slider">
-          <div class="card-wrap">
-            <div class="card">
-              <div
-                class="card-bg"
-                style="
-                  background-image: url('https://i.pinimg.com/originals/d4/b3/0e/d4b30ea3a48f2cd7abff3b8072f6b5b9.jpg');
-                "
-              ></div>
-              <div class="card-info">
-                <h1 class="text-xl font-bold">Canyons</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Repite las tarjetas según sea necesario -->
-        </div>
-
-        <button
-          id="next"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2"
-        >
-          Next
-        </button>
-      </div>
-    </section>
-
-    <section class="mt-10 px-8">
-      <h2 class="text-3xl font-bold mb-5">New Releases</h2>
-      <div class="flex overflow-x-auto gap-4">
-        <div class="card-wrap" data-image="img1.png">
-          <div class="card">
-            <div
-              class="card-bg"
-              style="
-                background-image: url('https://i.pinimg.com/originals/d4/b3/0e/d4b30ea3a48f2cd7abff3b8072f6b5b9.jpg');
-              "
-            ></div>
-            <div class="card-info">
-              <h1 class="text-xl font-bold">Canyons</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Repite las tarjetas según sea necesario -->
-      </div>
-    </section>
-
-    <section class="mt-10 px-8">
-      <h2 class="text-3xl font-bold mb-5">Popular on Veuw</h2>
-      <div class="flex overflow-x-auto gap-4">
-        <div class="card-wrap" data-image="img1.png">
-          <div class="card">
-            <div
-              class="card-bg"
-              style="
-                background-image: url('https://i.pinimg.com/originals/d4/b3/0e/d4b30ea3a48f2cd7abff3b8072f6b5b9.jpg');
-              "
-            ></div>
-            <div class="card-info">
-              <h1 class="text-xl font-bold">Canyons</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Repite las tarjetas según sea necesario -->
-      </div>
-    </section>
-
     <!-- Nueva sección añadida -->
-    <div class="new-row">
+    <div class="new-row mt-40">
       <div class="new-header">
         <h3 class="new-title">Title</h3>
         <div class="new-progress-bar"></div>
       </div>
-      <div class="new-container">
+      <div class="new-container flex justify-center overflow-hidden">
         <button class="new-handle new-left-handle">
           <div class="new-text">&#8249;</div>
         </button>
+        <div class="new-slider flex gap-4">
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img2.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/img1.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Title 1</h3>
+              <div class="flex space-x-4">
+                <button class="icon-button play-button">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
-        <div class="new-slider">
-          <img src="https://via.placeholder.com/210/00FF00?text=1" />
-          <img src="https://via.placeholder.com/220/00FF00?text=2" />
-          <img src="https://via.placeholder.com/230/00FF00?text=3" />
-          <img src="https://via.placeholder.com/240/00FF00?text=4" />
-          <img src="https://via.placeholder.com/250/00FF00?text=5" />
-          <img src="https://via.placeholder.com/260/00FF00?text=6" />
-          <img src="https://via.placeholder.com/270/00FF00?text=7" />
-          <img src="https://via.placeholder.com/280/00FF00?text=8" />
-          <img src="https://via.placeholder.com/250/00FF00?text=9" />
-          <img src="https://via.placeholder.com/260/00FF00?text=10" />
-          <img src="https://via.placeholder.com/270/00FF00?text=11" />
-          <img src="https://via.placeholder.com/280/00FF00?text=12" />
+          <!-- Repite este bloque para más elementos -->
         </div>
         <button class="new-handle new-right-handle">
           <div class="new-text">&#8250;</div>
