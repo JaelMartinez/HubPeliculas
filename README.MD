@@ -70,13 +70,14 @@ Veuw es una aplicación de streaming de películas y series. Este proyecto es pa
 ![Carousel de Películas](ImagesRepo/carousel.png)
 
 10. Si quieres cerrar sesión solo haz hover sobre el icono de perfil y clickea en logout.
+
 ## Proceso que segui para hacerlo
-Proceso que seguí para hacerlo
+
 Primero, busqué cómo funcionaban plataformas populares y cuál era la idea de cómo lo quería hacer. Me puse a trabajar en el diseño investigando recursos en YouTube, CodePen y múltiples páginas que creí que podrían funcionar para mi proyecto. La primera parte que hice fue el inicio de la página, ya que considero que es lo más importante. Hice muchas variaciones de esta y distintos diseños en Figma. Decidí utilizar Tailwind porque es una librería que me gusta mucho y me iba a ayudar a trabajar con el CSS de una manera más rápida y eficiente.
 
 Una vez hice la animación con los sliders de la página de inicio, que me llevó bastante tiempo, venía lo más complicado: el slider de películas. Me parece muy eficiente cómo trabajan el slider plataformas como Netflix o Prime Video, así que encontré la forma de hacerlo similar e igual de eficiente. Una vez terminado, me puse a realizar las demás vistas, asegurándome de que fueran responsivas y funcionales.
 
-Pensé en formas de mejorar mi página y se me ocurrió una idea de crear un carrusel de películas para cuando estás con amigos y no sabes qué película ver, y la implementé en mi proyecto. También utilicé la versión de ChatGPT-4 para que me ayudara a implementar recursos de CodePen, ya que algunos estaban hechos en distintos frameworks como Vue o React y no sabía cómo implementarlos.
+Pensé en formas de mejorar mi página y se me ocurrió una idea de crear un carrusel de películas para cuando estás con amigos y no sabes qué película ver, y la implementé en mi proyecto. También utilicé la versión de ChatGPT-4o para que me ayudara a implementar recursos de CodePen, ya que algunos estaban hechos en distintos frameworks como Vue o React y no sabía cómo implementarlos.
 
 ## Sprint Review
 
