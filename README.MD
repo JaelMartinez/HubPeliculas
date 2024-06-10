@@ -53,6 +53,8 @@ Veuw es una aplicación de streaming de películas y series inspirada en platafo
 
 5. Pasa el mouse sobre una película para ver las opciones de reproducción, me gusta y más información.
 
+![Sección de Hover](ImagesRepo/Slider.png)
+
 6. En el header puedes navegar a la sección de series y películas, estos tendrán sliders que cumplen la misma función.
 
 7. En el header podrás ver una sección de favoritos, aquí se guardarán todas las películas y series que marques como favoritas al clickear el corazón.
