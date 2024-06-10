@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Veuw es una aplicación de streaming de películas y series inspirada en plataformas como HBO, Amazon Prime y Netflix. Este proyecto es parte de un sprint de dos semanas y está desarrollado utilizando HTML, CSS, JavaScript y Tailwind CSS.
+Veuw es una aplicación de streaming de películas y series. Este proyecto es parte de un sprint de dos semanas y está desarrollado utilizando HTML, CSS, JavaScript y Tailwind CSS.
 
 ## Características
 
