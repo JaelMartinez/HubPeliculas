@@ -42,13 +42,21 @@ Veuw es una aplicación de streaming de películas y series inspirada en platafo
 ## Uso
 1. Al abrir la aplicación, se te pedirá iniciar sesión para que puedas entrar a la ventana principal.
 2. Tendrás que registrarte primero y luego iniciar sesión con esas credenciales.
+
+![Página de Login](ImagesRepo/Login.png)
 3. Al iniciar sesión, se mostrará la página principal con una selección de películas destacadas.
+
+![Página Principal](ImagesRepo/Inicio.png)
 4. En la parte inferior se mostrará un slider con diferentes películas.
+![Slider](ImagesRepo/Slider.png)
 5. Pasa el mouse sobre una película para ver las opciones de reproducción, me gusta y más información.
 6. En el header puedes navegar a la sección de series y películas, estos tendrán sliders que cumplen la misma función.
 7. En el header podrás ver una sección de favoritos, aquí se guardarán todas las películas y series que marques como favoritas al clickear el corazón.
+![Sección de Favoritos](ImagesRepo/Favorites.png)
 8. Podrás ver más información sobre la película al hacer clic en el icono de más información.
+![Información de la Película](ImagesRepo/Info.png)
 9. Haz clic en el botón "Random" para obtener recomendaciones de películas aleatorias.
+![Carousel de Películas](ImagesRepo/carousel.png)
 10. Si quieres cerrar sesión solo haz hover sobre el icono de perfil y clickea en logout.
 
 ## Sprint Review
