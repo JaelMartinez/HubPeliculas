@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -19,7 +19,7 @@
       <!-- Right: Login Form -->
       <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
         <h1 class="text-gray-50 text-2xl font-semibold mb-4">Login</h1>
-        <form action="#" method="POST">
+        <form id="loginForm">
           <!-- Username Input -->
           <div class="mb-4">
             <label for="username" class="block text-gray-50">Username</label>
@@ -64,11 +64,14 @@
             Login
           </button>
         </form>
-        <!-- Sign up  Link -->
+        <!-- Link to Register -->
         <div class="mt-6 text-blue-500 text-center">
-          <a href="#" class="hover:underline">Sign up Here</a>
+          <a href="register.html" class="hover:underline"
+            >Don't have an account? Register here</a
+          >
         </div>
       </div>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>

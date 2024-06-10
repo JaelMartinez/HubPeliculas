@@ -171,3 +171,19 @@ function throttle(cb, delay = 1000) {
     setTimeout(timeoutFunc, delay);
   };
 }
+document.querySelectorAll(".play-button").forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const videoSrc = event.currentTarget.getAttribute("data-video-src");
+    window.location.href = `video.html?src=${encodeURIComponent(videoSrc)}`;
+  });
+});
+// Verificar si el usuario está logueado
+if (!localStorage.getItem("loggedIn") && !sessionStorage.getItem("loggedIn")) {
+  window.location.href = "../login/login.html";
+}
+// Lógica para el logout
+document.getElementById("logout").addEventListener("click", function () {
+  localStorage.removeItem("loggedIn");
+  sessionStorage.removeItem("loggedIn");
+  window.location.href = "../login/login.html";
+});

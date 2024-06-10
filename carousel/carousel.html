@@ -5,39 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Rotating Carousel</title>
     <link rel="stylesheet" href="carousel.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>¡Elige el genero!</h1>
-    <div class="categories">
-      <select name="movie-genre" id="movie-genre">
-        <option value="">--Please choose an option--</option>
-        <option value="action">Action</option>
-        <option value="comedy">Comedy</option>
-        <option value="drama">Drama</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="horror">Horror</option>
-        <option value="romance">Romance</option>
-        <option value="thriller">Thriller</option>
-      </select>
-    </div>
+  <body class="bg-[#040610] text-[#eee] m-0 font-poppins">
+    <header
+      id="header"
+      class="w-full bg-gray-950 text-white flex items-center justify-between px-4 py-4 fixed top-0 left-0 z-50 lg:px-6 lg:py-5 xl:px-8 xl:py-6 2xl:px-10 2xl:py-7"
+    >
+      <div class="flex justify-start">
+        <nav class="flex space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7">
+          <a
+            href="../inicio/inicio.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Home</a
+          >
+          <a
+            href="../series/series.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Series</a
+          >
+          <a
+            href="../Movies/Movies.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Movies</a
+          >
+          <a
+            href="../favorites/favorites.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Favorites</a
+          >
+        </nav>
+      </div>
+      <div class="pr-4 pl-4 lg:pr-10 lg:pl-10"></div>
+      <div
+        class="flex items-center space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7 justify-end"
+      >
+        <input
+          type="text"
+          class="w-32 lg:w-48 xl:w-56 2xl:w-64 p-2 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Search..."
+        />
+        <a
+          href="../carousel/carousel.html"
+          class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+          >Random</a
+        >
+        <div class="dropdown">
+          <a
+            href="#"
+            class="hover:text-gray-400 text-lg xl:text-xl 2xl:text-xl"
+          >
+            <i class="fas fa-user-circle fa-2x xl:fa-2x 2xl:fa-2x"></i>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="#"
+              id="logout"
+              class="text-sm lg:text-base xl:text-lg 2xl:text-lg"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container mx-auto text-center py-32">
+      <h1 class="text-3xl font-bold mb-6">
+        ¡Press random to watch a random movie!
+      </h1>
+      <div class="mb-8">
+        <select
+          class="p-2 rounded bg-gray-800 text-white"
+          name="movie-genre"
+          id="movie-genre"
+        >
+          <option value="">--Please choose an option--</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="thriller">Thriller</option>
+        </select>
+      </div>
 
-    <div class="carousel" data-gap="25" data-bfc>
-      <figure>
-        <img src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="" />
-        <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="" />
-        <img src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="" />
-        <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="" />
-        <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="" />
-        <img src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="" />
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="" />
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="" />
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="" />
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="" />
-        <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="" />
-      </figure>
-      <nav>
-        <button class="nav random">Random</button>
-      </nav>
+      <div class="carousel relative mx-auto mb-8" data-gap="25" data-bfc>
+        <figure class="w-3/5 mx-auto">
+          <img
+            src="../image/imgsCategorias/imgsTrending/Avatar.png"
+            alt="Avatar"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/BlackPanther.png"
+            alt="BlackPanther"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/Euphoria.png"
+            alt="Euphoria"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/HouseOfTheDragon.png"
+            alt="HouseOfTheDragon"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/Ozark.png"
+            alt="Ozark"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/StrangerThings.png"
+            alt="StrangerThings"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/TheBoys.png"
+            alt="TheBoys"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/TheLastOfUs.png"
+            alt="TheLastOfUs"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/TheWhiteLotus.png"
+            alt="TheWhiteLotus"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/TopGunMaverick.png"
+            alt="TopGunMaverick"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/Bridgerton.png"
+            alt="Bridgerton"
+          />
+          <img
+            src="../image/imgsCategorias/imgsTrending/TheBatman.png"
+            alt="TheBatman"
+          />
+        </figure>
+        <nav class="mt-4">
+          <button class="random bg-orange-500 text-white px-4 py-2 rounded">
+            Random
+          </button>
+        </nav>
+      </div>
     </div>
     <script src="carousel.js"></script>
   </body>

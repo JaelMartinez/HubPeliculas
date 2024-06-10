@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: Poppins;
   font-size: 16px;
-  background-color: #000003;
+  background-color: #b4b4e6;
 }
 
 h1 {
@@ -19,10 +19,9 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Carousel configuration parameters */
 .carousel {
   padding: 20px;
-  perspective: 1500px; /* $viewer-distance */
+  perspective: 1400px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,7 @@ h2 {
 
 .carousel figure {
   margin: 0;
-  width: 40%; /* $item-width */
+  width: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
   position: relative;
@@ -44,7 +43,7 @@ h2 {
 .carousel figure img {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 0; /* $item-separation / 2 */
+  padding: 0 0;
 }
 
 .carousel figure img:not(:first-of-type) {
@@ -75,8 +74,9 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%; /* Asegúrate de que el contenedor tenga una altura, de lo contrario, no se centrará verticalmente */
+  height: 100%;
 }
+
 .carousel nav button {
   flex: 0 0 auto;
   margin: 0 5px;
@@ -88,16 +88,44 @@ h2 {
   padding: 5px 10px;
 }
 
-/* Opcional: estilos adicionales para el botón random */
 .carousel nav .random {
-  background-color: #ff4500; /* Puedes elegir el color que prefieras */
+  background-color: #580000;
   color: #fff;
 }
-/* Carousel configuration parameters */
+
 .carousel figure {
   margin: 0;
-  width: 40%; /* $item-width */
+  width: 40%;
   transform-style: preserve-3d;
-  transition: transform 2s ease-in-out; /* Duración por defecto */
+  transition: transform 2s ease-in-out;
   position: relative;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veuw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../favorites/favorites.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+  </head>
+
+  <body class="bg-[#040610] text-[#eee] m-0 font-poppins">
+    <header
+      id="header"
+      class="w-full text-white flex items-center justify-between px-8 py-6 fixed top-0 left-0 z-50 bg-opacity-50 bg-black"
+    >
+      <div class="flex justify-start">
+        <nav class="flex space-x-6">
+          <a href="../inicio/inicio.html" class="hover:text-gray-400">Home</a>
+          <a href="../series/series.html" class="hover:text-gray-400">Series</a>
+          <a href="../Movies/Movies.html" class="hover:text-gray-400">Movies</a>
+          <a href="../favorites/favorites.html" class="hover:text-gray-400"
+            >Favorites</a
+          >
+        </nav>
+      </div>
+      <div class="pr-64 pl-8">
+        <input
+          type="text"
+          class="w-64 p-2 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Search..."
+        />
+      </div>
+      <div class="flex justify-end">
+        <div class="dropdown">
+          <a href="#" class="hover:text-gray-400 text-lg">
+            <i class="fas fa-user-circle fa-2x"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="#" id="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex items-center justify-center h-screen bg-cover bg-center relative"
+      style="
+        background-image: url('../image/imgsCategorias/imgsTrending/TopGunMaverick.png');
+      "
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative z-10 text-center text-white p-16">
+        <h1 class="text-6xl font-bold mb-8">Top Gun Maverick</h1>
+        <p class="text-2xl mb-6">B 26/5/2022 (MX) Action, Drama 2h 11m</p>
+        <p class="text-xl mb-8 leading-relaxed">
+          After more than thirty years of service as one of the Navy’s top
+          aviators, and dodging the advancement in rank that would ground
+          him,<br />
+          Pete “Maverick” Mitchell finds himself training a detachment of TOP
+          GUN graduates for a specialized mission the likes of which no living
+          pilot has ever seen.
+        </p>
+        <div class="flex space-x-6 justify-center">
+          <button
+            class="icon-button play-button bg-gray-700 text-white px-6 py-3 rounded hover:bg-gray-900"
+            data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+          >
+            <i class="fas fa-play"></i>
+          </button>
+          <button
+            class="icon-button fav-button bg-gray-700 text-white px-6 py-3 rounded hover:bg-gray-900"
+          >
+            Add to favorites
+          </button>
+          <a
+            href="../carousel/carousel.html"
+            class="bg-green-900 text-white px-6 py-3 rounded hover:bg-gray-900"
+            >Roll again
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        initializeFavoriteButtons();
+      });
+    </script>
+    <script src="info.js"></script>
+  </body>
+</html>

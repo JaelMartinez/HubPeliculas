@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veuw</title>
+    <link rel="stylesheet" href="../inicio/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+  </head>
+
+  <body class="bg-[#040610] text-[#eee] m-0 font-poppins">
+    <header
+      id="header"
+      class="w-full bg-gray-950 text-white flex items-center justify-between px-4 py-4 fixed top-0 left-0 z-50 lg:px-6 lg:py-5 xl:px-8 xl:py-6 2xl:px-10 2xl:py-7"
+    >
+      <div class="flex justify-start">
+        <nav class="flex space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7">
+          <a
+            href="../inicio/inicio.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Home</a
+          >
+          <a
+            href="../series/series.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Series</a
+          >
+          <a
+            href="../Movies/Movies.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Movies</a
+          >
+          <a
+            href="../favorites/favorites.html"
+            class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+            >Favorites</a
+          >
+        </nav>
+      </div>
+      <div class="pr-4 pl-4 lg:pr-10 lg:pl-10"></div>
+      <div
+        class="flex items-center space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7 justify-end"
+      >
+        <input
+          type="text"
+          class="w-32 lg:w-48 xl:w-56 2xl:w-64 p-2 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Search..."
+        />
+        <a
+          href="../carousel/carousel.html"
+          class="hover:text-gray-400 text-sm lg:text-base xl:text-lg 2xl:text-lg"
+          >Random</a
+        >
+        <div class="dropdown">
+          <a
+            href="#"
+            class="hover:text-gray-400 text-lg xl:text-xl 2xl:text-xl"
+          >
+            <i class="fas fa-user-circle fa-2x xl:fa-2x 2xl:fa-2x"></i>
+          </a>
+          <div class="dropdown-content">
+            <a
+              href="#"
+              id="logout"
+              class="text-sm lg:text-base xl:text-lg 2xl:text-lg"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="new-row mt-20">
+      <div class="new-header">
+        <h3 class="new-title">Trending</h3>
+        <div class="new-progress-bar"></div>
+      </div>
+      <div class="new-container flex justify-center overflow-hidden mt-6">
+        <button class="new-handle new-left-handle">
+          <div class="new-text">&#8249;</div>
+        </button>
+        <div class="new-slider flex gap-4">
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheLastOfUs.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Last of Us</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/yyGetSp7CIc"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheLastOfUs.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Avatar.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Avatar: The Way of Water</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/d9MyW72ELq0"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Avatar.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/BlackPanther.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">
+                Black Panther: Wakanda Forever
+              </h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/_Z3QKkl1WyM"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/BlackPanther.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/StrangerThings.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Stranger Things</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/a3thyAnShck"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/StrangerThings.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/HouseOfTheDragon.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">House of the Dragon</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/DotnJ7tTA34"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/HouseOfDragons.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheWhiteLotus.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The White Lotus</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/TGLq7_MonZ4"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheWhiteLotus.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBoys.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The boys</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/K-8VYKUZYiw"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBoys.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Ozark.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Ozark</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/5hAXVqrljbs"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Ozark.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Euphoria.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Euphoria</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/UR4Pxgnm-GA"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Euphoria.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Bridgerton.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Bridgerton</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Bridgerton.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TopGunMaverick.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Top Gun: Maverick</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TopGunMaverick.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBatman.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Batman</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/fWQrd6cwJ0A"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBatman.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="new-handle new-right-handle">
+          <div class="new-text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="new-row mt-8">
+      <div class="new-header">
+        <h3 class="new-title">Action</h3>
+        <div class="new-progress-bar"></div>
+      </div>
+      <div class="new-container flex justify-center overflow-hidden mt-6">
+        <button class="new-handle new-left-handle">
+          <div class="new-text">&#8249;</div>
+        </button>
+        <div class="new-slider flex gap-4">
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheLastOfUs.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Last of Us</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/yyGetSp7CIc"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheLastOfUs.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Avatar.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Avatar: The Way of Water</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/d9MyW72ELq0"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Avatar.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/BlackPanther.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">
+                Black Panther: Wakanda Forever
+              </h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/_Z3QKkl1WyM"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/BlackPanther.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/StrangerThings.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Stranger Things</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/a3thyAnShck"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/StrangerThings.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/HouseOfTheDragon.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">House of the Dragon</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/DotnJ7tTA34"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/HouseOfDragons.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheWhiteLotus.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The White Lotus</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/TGLq7_MonZ4"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheWhiteLotus.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBoys.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The boys</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/K-8VYKUZYiw"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBoys.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Ozark.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Ozark</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/5hAXVqrljbs"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Ozark.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Euphoria.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Euphoria</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/UR4Pxgnm-GA"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Euphoria.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Bridgerton.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Bridgerton</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Bridgerton.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TopGunMaverick.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Top Gun: Maverick</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TopGunMaverick.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBatman.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Batman</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/fWQrd6cwJ0A"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBatman.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="new-handle new-right-handle">
+          <div class="new-text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="new-row mt-8">
+      <div class="new-header">
+        <h3 class="new-title">Drama</h3>
+        <div class="new-progress-bar"></div>
+      </div>
+      <div class="new-container flex justify-center overflow-hidden mt-6">
+        <button class="new-handle new-left-handle">
+          <div class="new-text">&#8249;</div>
+        </button>
+        <div class="new-slider flex gap-4">
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheLastOfUs.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Last of Us</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/yyGetSp7CIc"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheLastOfUs.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Avatar.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Avatar: The Way of Water</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/d9MyW72ELq0"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Avatar.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/BlackPanther.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">
+                Black Panther: Wakanda Forever
+              </h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/_Z3QKkl1WyM"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/BlackPanther.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/StrangerThings.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Stranger Things</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/a3thyAnShck"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/StrangerThings.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/HouseOfTheDragon.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">House of the Dragon</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/DotnJ7tTA34"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/HouseOfDragons.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheWhiteLotus.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The White Lotus</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/TGLq7_MonZ4"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheWhiteLotus.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBoys.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The boys</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/K-8VYKUZYiw"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBoys.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Ozark.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Ozark</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/5hAXVqrljbs"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Ozark.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Euphoria.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Euphoria</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/UR4Pxgnm-GA"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Euphoria.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Bridgerton.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Bridgerton</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Bridgerton.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TopGunMaverick.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Top Gun: Maverick</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TopGunMaverick.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBatman.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Batman</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/fWQrd6cwJ0A"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBatman.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="new-handle new-right-handle">
+          <div class="new-text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <div class="new-row mt-8">
+      <div class="new-header">
+        <h3 class="new-title">Anime</h3>
+        <div class="new-progress-bar"></div>
+      </div>
+      <div class="new-container flex justify-center overflow-hidden mt-6">
+        <button class="new-handle new-left-handle">
+          <div class="new-text">&#8249;</div>
+        </button>
+        <div class="new-slider flex gap-4">
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheLastOfUs.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Last of Us</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/yyGetSp7CIc"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheLastOfUs.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Avatar.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Avatar: The Way of Water</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/d9MyW72ELq0"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Avatar.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/BlackPanther.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">
+                Black Panther: Wakanda Forever
+              </h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/_Z3QKkl1WyM"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/BlackPanther.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/StrangerThings.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Stranger Things</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/a3thyAnShck"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/StrangerThings.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/HouseOfTheDragon.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">House of the Dragon</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/DotnJ7tTA34"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/HouseOfDragons.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheWhiteLotus.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The White Lotus</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/TGLq7_MonZ4"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheWhiteLotus.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBoys.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The boys</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/K-8VYKUZYiw"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBoys.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Ozark.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Ozark</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/5hAXVqrljbs"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Ozark.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Euphoria.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Euphoria</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/UR4Pxgnm-GA"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Euphoria.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/Bridgerton.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Bridgerton</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/Bridgerton.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TopGunMaverick.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">Top Gun: Maverick</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/gpv7ayf_tyE"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TopGunMaverick.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-slide relative overflow-hidden rounded-lg">
+            <img
+              src="../image/imgsCategorias/imgsTrending/TheBatman.png"
+              class="w-full h-full object-cover transition-transform duration-300 ease-in-out"
+            />
+            <div
+              class="hover-content absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out"
+            >
+              <h3 class="text-xl text-white mb-4">The Batman</h3>
+              <div class="flex space-x-4">
+                <button
+                  class="icon-button play-button"
+                  data-video-src="https://www.youtube.com/embed/fWQrd6cwJ0A"
+                >
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="icon-button fav-button">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <a
+                  href="../info/TheBatman.html"
+                  class="icon-button info-button flex items-center"
+                >
+                  <i class="fas fa-info-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="new-handle new-right-handle">
+          <div class="new-text">&#8250;</div>
+        </button>
+      </div>
+    </div>
+    <script src="series.js"></script>
+  </body>
+</html>

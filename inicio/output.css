@@ -762,12 +762,21 @@ video {
   margin: 0px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .ml-2{
@@ -778,20 +787,28 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mt-\[-50px\]{
   margin-top: -50px;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-40{
-  margin-top: 10rem;
 }
 
 .box-border{
@@ -907,6 +924,14 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-3\/5{
+  width: 60%;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .w-64{
@@ -1273,6 +1298,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1459,6 +1488,10 @@ video {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -1950,9 +1983,14 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100{
+.bg-gray-700{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-gray-950{
@@ -1960,9 +1998,28 @@ video {
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
 }
 
+.bg-green-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-opacity-70{
@@ -1987,6 +2044,10 @@ video {
 .box-decoration-clone{
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover{
+  background-size: cover;
 }
 
 .bg-fixed{
@@ -2016,6 +2077,10 @@ video {
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-repeat{
@@ -2079,6 +2144,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-16{
+  padding: 4rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2097,6 +2166,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -2107,13 +2181,40 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-8{
   padding-left: 2rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pr-64{
+  padding-right: 16rem;
 }
 
 .pr-80{
@@ -2181,8 +2282,28 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[100px\]{
   font-size: 100px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -2266,6 +2387,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-relaxed{
+  line-height: 1.625;
+}
+
 .tracking-widest{
   letter-spacing: 0.1em;
 }
@@ -2289,9 +2414,14 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-gray-600{
+.text-gray-50{
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -2357,6 +2487,10 @@ video {
 
 .opacity-0{
   opacity: 0;
+}
+
+.opacity-50{
+  opacity: 0.5;
 }
 
 .bg-blend-normal{
@@ -2703,7 +2837,7 @@ body {
   font-family: Poppins;
   margin: 0;
   background-color: #edecef;
-  color: #eee;
+  color: #000000;
 }
 
 svg {
@@ -2905,7 +3039,7 @@ svg {
   border-radius: 1rem;
   background-color: #333;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-    inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    inset rgba(5, 0, 0, 0.5) 0 0 0 6px;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -2919,7 +3053,7 @@ svg {
 }
 
 .new-slide:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .hover-content {
@@ -2936,30 +3070,36 @@ svg {
   transition: opacity 0.3s ease-in-out;
 }
 
-.new-slide:hover .hover-content {
+.new-slide:hover .hover-content .title-overlay {
+  transform: translateY(-100%);
+}
+
+.new-slide:hover .hover-content .flex {
   opacity: 1;
 }
 
+.new-slide .hover-content {
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  /* Make hover-content non-interactive */
+}
+
+.new-slide:hover .hover-content {
+  opacity: 1;
+  pointer-events: auto;
+  /* Make hover-content interactive on hover */
+}
+
 .icon-button {
-  background: rgba(247, 245, 245, 0.8);
+  background: rgba(119, 3, 3, 0.5);
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
-  margin: 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.icon-button:hover {
-  background: rgba(255, 255, 255, 1);
-}
-
-.icon-button i {
-  color: #12044d;
-  font-size: 1.5rem;
 }
 
 .new-handle {
@@ -3051,6 +3191,126 @@ svg {
   }
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Custom Media Queries for responsive slider */
+
+@media (max-width: 1640px) {
+  .thumbnail {
+    margin-top: -180px;
+    /* Ajusta este valor según sea necesario */
+  }
+
+  .thumbnail .item {
+    width: 250px;
+    height: 150px;
+  }
+
+  .slider .list .item .content h2 {
+    font-size: 60px;
+    /* Ajusta el tamaño del texto */
+  }
+
+  .slider .list .item .content p {
+    font-size: 16px;
+    /* Ajusta el tamaño del texto */
+    max-width: 500px;
+  }
+
+  header #header {
+    padding: 16px 24px;
+    /* Ajusta el padding del header */
+  }
+}
+
+@media (min-width: 2560px) {
+  .thumbnail {
+    margin-top: -350px;
+    /* Ajusta este valor según sea necesario */
+  }
+
+  .thumbnail .item {
+    width: 500px;
+    height: 280px;
+  }
+
+  .slider .list .item .content h2 {
+    font-size: 120px;
+    /* Ajusta el tamaño del texto */
+  }
+
+  .slider .list .item .content p {
+    font-size: 24px;
+    /* Ajusta el tamaño del texto */
+    max-width: 900px;
+  }
+
+  header #header {
+    padding: 32px 48px;
+    /* Ajusta el padding del header */
+    font-size: 24px;
+    /* Ajusta el tamaño del texto del header */
+  }
+}
+
+@media (min-width: 3840px) {
+  .thumbnail {
+    margin-top: -500px;
+    /* Ajusta este valor según sea necesario */
+  }
+
+  .thumbnail .item {
+    width: 700px;
+    height: 400px;
+  }
+
+  .slider .list .item .content h2 {
+    font-size: 160px;
+    /* Ajusta el tamaño del texto */
+  }
+
+  .slider .list .item .content p {
+    font-size: 32px;
+    /* Ajusta el tamaño del texto */
+    max-width: 1200px;
+  }
+
+  header #header {
+    padding: 48px 64px;
+    /* Ajusta el padding del header */
+    font-size: 32px;
+    /* Ajusta el tamaño del texto del header */
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -3090,6 +3350,11 @@ svg {
 .hover\:bg-blue-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{
@@ -3145,6 +3410,10 @@ svg {
 }
 
 @media (min-width: 640px){
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -3165,8 +3434,109 @@ svg {
     width: 50%;
   }
 
+  .lg\:w-48{
+    width: 12rem;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:p-36{
     padding: 9rem;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:pl-10{
+    padding-left: 2.5rem;
+  }
+
+  .lg\:pr-10{
+    padding-right: 2.5rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-56{
+    width: 14rem;
+  }
+
+  .xl\:space-x-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:w-64{
+    width: 16rem;
+  }
+
+  .\32xl\:space-x-7 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .\32xl\:py-7{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .\32xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

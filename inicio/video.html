@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veuw Video Player</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+  </head>
+  <body class="bg-[#040610] text-[#eee] m-0 font-poppins">
+    <header
+      id="header"
+      class="w-full bg-gray-950 text-white flex items-center justify-between px-8 py-6 fixed top-0 left-0 z-50"
+    >
+      <div class="flex justify-start">
+        <nav class="flex space-x-6">
+          <a href="inicio.html" class="hover:text-gray-400">Home</a>
+          <a href="../series/series.html" class="hover:text-gray-400">Series</a>
+          <a href="../Movies/Movies.html" class="hover:text-gray-400">Movies</a>
+          <a href="#" class="hover:text-gray-400">Favorites</a>
+        </nav>
+      </div>
+      <div class="pr-80 pl-8">
+        <input
+          type="text"
+          class="w-64 p-2 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Search..."
+        />
+      </div>
+      <div class="flex justify-end"></div>
+    </header>
+
+    <!-- Video Section -->
+    <div class="flex items-center justify-center h-screen">
+      <iframe
+        id="video-player"
+        width="80%"
+        height="80%"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script>
+      // Get video source from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const videoSrc = urlParams.get("src");
+      if (videoSrc) {
+        const videoPlayer = document.getElementById("video-player");
+        videoPlayer.src = videoSrc;
+      }
+    </script>
+  </body>
+</html>

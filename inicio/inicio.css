@@ -7,7 +7,7 @@ body {
   font-family: Poppins;
   margin: 0;
   background-color: #edecef;
-  color: #eee;
+  color: #000000;
 }
 
 svg {
@@ -204,7 +204,7 @@ svg {
   border-radius: 1rem;
   background-color: #333;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-    inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    inset rgba(5, 0, 0, 0.5) 0 0 0 6px;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -217,7 +217,7 @@ svg {
 }
 
 .new-slide:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .hover-content {
@@ -234,30 +234,34 @@ svg {
   transition: opacity 0.3s ease-in-out;
 }
 
-.new-slide:hover .hover-content {
+.new-slide:hover .hover-content .title-overlay {
+  transform: translateY(-100%);
+}
+
+.new-slide:hover .hover-content .flex {
   opacity: 1;
 }
 
+.new-slide .hover-content {
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Make hover-content non-interactive */
+}
+
+.new-slide:hover .hover-content {
+  opacity: 1;
+  pointer-events: auto; /* Make hover-content interactive on hover */
+}
+
 .icon-button {
-  background: rgba(247, 245, 245, 0.8);
+  background: rgba(119, 3, 3, 0.5);
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
-  margin: 0.5rem;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.icon-button:hover {
-  background: rgba(255, 255, 255, 1);
-}
-
-.icon-button i {
-  color: #12044d;
-  font-size: 1.5rem;
 }
 
 .new-handle {
@@ -346,5 +350,97 @@ svg {
 @media (max-width: 650px) {
   .new-slider {
     --items-per-screen: 2;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Custom Media Queries for responsive slider */
+
+@media (max-width: 1640px) {
+  .thumbnail {
+    margin-top: -180px; /* Ajusta este valor según sea necesario */
+  }
+  .thumbnail .item {
+    width: 250px;
+    height: 150px;
+  }
+  .slider .list .item .content h2 {
+    font-size: 60px; /* Ajusta el tamaño del texto */
+  }
+  .slider .list .item .content p {
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    max-width: 500px;
+  }
+  header #header {
+    padding: 16px 24px; /* Ajusta el padding del header */
+  }
+}
+
+@media (min-width: 2560px) {
+  .thumbnail {
+    margin-top: -350px; /* Ajusta este valor según sea necesario */
+  }
+  .thumbnail .item {
+    width: 500px;
+    height: 280px;
+  }
+  .slider .list .item .content h2 {
+    font-size: 120px; /* Ajusta el tamaño del texto */
+  }
+  .slider .list .item .content p {
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    max-width: 900px;
+  }
+  header #header {
+    padding: 32px 48px; /* Ajusta el padding del header */
+    font-size: 24px; /* Ajusta el tamaño del texto del header */
+  }
+}
+
+@media (min-width: 3840px) {
+  .thumbnail {
+    margin-top: -500px; /* Ajusta este valor según sea necesario */
+  }
+  .thumbnail .item {
+    width: 700px;
+    height: 400px;
+  }
+  .slider .list .item .content h2 {
+    font-size: 160px; /* Ajusta el tamaño del texto */
+  }
+  .slider .list .item .content p {
+    font-size: 32px; /* Ajusta el tamaño del texto */
+    max-width: 1200px;
+  }
+  header #header {
+    padding: 48px 64px; /* Ajusta el padding del header */
+    font-size: 32px; /* Ajusta el tamaño del texto del header */
   }
 }
